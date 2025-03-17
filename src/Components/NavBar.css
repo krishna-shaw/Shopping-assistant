@@ -1,0 +1,81 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 3px 7%; /* Further reduced padding to decrease height */
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px; /* Reduced margin for a more compact look */
+}
+
+.search-box {
+    min-height: 5px; /* Decreased height for slim look */
+    min-width: 400px; /* Increased width for long look */
+    display: flex;
+    align-items: center;
+    background-color: white; /* Changed background color to black */
+    padding: 2px 20px; /* Reduced padding to decrease height */
+    border-radius: 50px;
+    border: 2px solid black; /* Added black border */
+    outline: none;
+}
+
+.search-box input {
+    padding: 8px; /* Adjusted padding for a slimmer look */
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-size: 18px;
+    width: 100%; /* Adjusted to fill the search box */
+}
+
+.search-box img {
+    width: 20px; /* Set width for the GIF */
+    height: 20px; /* Set height for the GIF */
+    margin-left: 10px; /* Optional: add some space between the input and the image */
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .search-box {
+    border: 2px solid transparent; /* Remove border in dark mode */
+}
+
+/* .dark-theme :not(.product-card) {
+  background-color: #121212;
+  color: white;
+} */
+
+/* Force product card text to stay black */
+.dark-theme .product-card *{
+  color: black !important;
+  background-color: none !important;
+}
+

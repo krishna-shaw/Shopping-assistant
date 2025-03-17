@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end; /* Align items to the right */
+    display: flex; /* Use flexbox for alignment */
+  }
+
+  .footer ul li {
+    margin: 0 7px; /* Increased margin for better spacing */
+  }
+
+  
+  .footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .Footer-links{
+    padding: 8px 10px;
+    display: flex;
+    margin: 0 10px;
+    justify-content:space-around;
+    
+  }
